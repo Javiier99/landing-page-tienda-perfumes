@@ -1,0 +1,445 @@
+/* Tipografias */
+
+@font-face {
+    font-family: "Bodoni-regular";
+    src: url(/src/tipografia/BOD_R.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Copperplate-gothic-light-regular";
+    src: url(/src/tipografia/COPRGTL.TTF);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(/src/tipografia/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+/* Global */
+:root{ 
+    /* Coolores globales */
+    --negro : #000;
+    --blanco : #fff;
+    --gris-claro : #f2f2f2;
+    --rosa-oscuro : #c17e8a;
+    --rosa-palo : #f5d6dd;
+    
+    /* Tipografia */
+
+    --bodoni-regular : "Bodoni-regular";
+    --Copperplate-gothic-light-regular : "Copperplate-gothic-light-regular";
+    --Poppins-regular : "Poppins-regular";
+}
+
+h1{
+    font-size: 40px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: var(--bodoni-regular);
+}
+
+h2{
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: var(--Copperplate-gothic-light-regular);
+}
+
+h3{
+    font-size: 20px;
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: var(--Copperplate-gothic-light-regular);
+}
+
+p{
+    font-size: 16px;
+    text-align: center;
+    font-family: var(--Poppins-regular);
+}
+
+img{
+    width: 80%;
+    border-radius: 40px 40px 0px 0px;
+}
+
+a{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: var(--rosa-oscuro);
+    border-radius: 3px;
+    border: 2px solid var(--rosa-oscuro);
+    color: var(--blanco);
+    cursor: pointer;
+    font-family: var(--Poppins-regular);
+    text-decoration: none;
+
+}
+
+
+
+
+a:hover{
+    border: 2px var(--rosa-oscuro) solid;
+    background-color: rgba(127, 255, 212, 0);
+    color: var(--rosa-oscuro);
+}
+
+
+
+
+
+/* Codigo css web */
+
+
+/* Header */
+
+header{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.header-logo{
+    width: 300px;
+    border-radius: 0px;
+
+}
+
+
+/* 1º seccion */
+
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.seccion-1{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../src/img/fondoazalea.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.seccion-1-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    background-color: #c17e8a63;
+    padding-left: 80px;
+}
+
+.seccion-1-div p, h1{
+    color: var(--blanco);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.seccion-1-div-a:hover{
+    color: var(--blanco);
+    border-color: var(--blanco);
+}
+
+
+/* 2º Sección */
+
+.seccion-2{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px;
+    
+}
+
+.seccion-2-productos{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+
+.seccion-2-productos-producto-individual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    
+}
+
+
+.seccion-2-productos-producto-individual-caracteristicas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--gris-claro);
+    width: 80%;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 40px 40px;
+}
+
+.seccion-2-productos-producto-individual-caracteristicas p{
+    width: 95%;
+}
+
+/* Sección 3 */
+
+.seccion-3{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gris-claro);
+}
+
+.seccion-3-h2{
+    padding: 20px 0px;
+}
+
+.seccion-3-p{
+    text-align: center;
+    width: 60%;
+}
+
+
+/* Seccón 3 */
+
+.seccion-4{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rosa-oscuro);
+}
+
+
+.seccion-4-h2, .seccion-4-p {
+    color: var(--blanco);
+}
+
+.seccion-4-button{
+    background-color: var(--blanco);
+    color: var(--rosa-oscuro);
+    border: 2px solid var(--blanco);
+    border-radius: 3px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.seccion-4-button:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--blanco);
+    border: var(--blanco);
+    border: 2px solid var(--blanco);
+    border-radius: 3px;
+}
+
+.section-4-button{
+    background-color: var(--blanco);
+    color: var(--rosa-oscuro);
+    border: var(--blanco) solid 2px;
+    border-radius: 3px;
+}
+.section-4-button:hover{
+    background-color: rgba(0, 0, 139, 0);
+    color: var(--blanco);
+    border: var(--blanco) solid 2px;
+    border-radius: 3px;
+}
+
+
+
+/* Footer */
+
+footer{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: var(--negro);
+}
+
+
+.footer-h2, .footer-p{
+    color: var(--blanco);
+}
+
+
+
+/* Responsive */
+
+
+@media (max-width: 1284px) {
+
+    img{
+        width: 90%;
+    }
+
+
+    .seccion-1{
+        height: 40vh;
+    }
+
+
+    .seccion-2-productos{
+        width: 95%;
+        gap: 0px;
+        padding-top: 40px;
+    }
+
+    .seccion-2-productos-producto-individual-caracteristicas{
+        width: 90%;
+    }
+
+    .seccion-3{
+        height: 30vh;
+    }
+
+    .seccion-3-p{
+        width: 80%;
+    }
+
+    .seccion-4{
+        height: 30vh;
+    }
+
+}
+
+
+@media (max-width: 1018px) {
+
+    img{
+        width: 90%;
+    }
+
+
+    .seccion-1{
+        height: 40vh;
+        padding-left: 0px;
+    }
+    
+    .seccion-1-div{
+        align-items: center;
+    }
+
+
+    .seccion-2-productos{
+        width: 95%;
+        gap: 0px;
+        padding-top: 40px;
+    }
+
+    .seccion-2-productos-producto-individual-caracteristicas{
+        width: 90%;
+    }
+
+    .seccion-3{
+        height: 40vh;
+    }
+
+    .seccion-3-p{
+        width: 90%;
+    }
+
+    .seccion-4{
+        height: 40vh;
+    }
+
+}
+
+
+
+@media (max-width: 860px) {
+
+    .seccion-1-div{
+        padding-left: 0px;
+    }
+
+    .seccion-2-productos{
+        width: 95%;
+        gap: 15px;
+        padding-top: 40px;
+    }
+
+    .seccion-3{
+        height: auto;
+    }
+
+    .seccion-3-h2{
+        padding: 30px 0px;
+    }
+
+    .seccion-3-p{
+        text-align: center;
+        width: 90%;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .seccion-1-div{
+        padding-left: 0px;
+    }
+
+    .seccion-2-productos{
+        width: 95%;
+        gap: 15px;
+        padding-top: 40px;
+        flex-direction: column;
+    }
+    .seccion-2-productos-producto-individual{
+        width: 100%;
+    }
+
+    .seccion-3{
+        height: auto;
+    }
+
+    .seccion-3-h2{
+        padding: 30px 0px;
+    }
+
+    .seccion-3-p{
+        text-align: center;
+        width: 90%;
+    }
+
+}
